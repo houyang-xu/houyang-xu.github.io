@@ -54,6 +54,7 @@
     }
 
     .links {
+      color: rgb(128, 96, 192);
       margin-top: 0.5em;
     }
 
@@ -89,9 +90,16 @@ a:hover {
 
     hr {
       border: none;
-      height: 1px;
-      background: #000;
+      height: 1.5px;
+      background: #444;
       margin-bottom: 1em;
+    }
+
+    hr.sub {
+  border: none;
+  height: 0.5px;
+  background: #888;
+  margin-bottom: 1em;
     }
 
     .entry {
@@ -156,6 +164,9 @@ a:hover {
         padding: 48;
       }
     }
+
+</style>
+
   </style>
 </head>
 <body>
@@ -168,16 +179,37 @@ a:hover {
   <div class="bio-section">
     <p>I am a finishing PhD candidate in Chemistry in the <a href="https://www.nitschkegroup-cambridge.com/"> Nitschke group</a> at the University of Cambridge. My PhD research projects focus on the dynamics and adaptability of metal-organic cages.</p>
     <p>
-      <strong>Email:</strong> <a href="mailto:xuhy0914@gmail.com" style="color: rgb(96, 96, 96);">xuhy0914@gmail.com</a> • 
-      <a href="mailto:hx276@cam.ac.uk" style="color: rgb(96, 96, 96);">hx276@cam.ac.uk</a><br>
+      <!--
+      <strong>Email:</strong> <a href="mailto:xuhy0914@gmail.com">xuhy0914 "at sign" gmail "dot" com</a> • <a href="mailto:hx276@cam.ac.uk">hx276 "at sign" cam "dot" ac "dot" uk</a><br>
+      -->
+       
+     <strong>Email:</strong>
+    <span id="em1" class="links">xuhy0914 AT gmail.com</span>
+    •
+    <span id="em2" class="links">hx276 AT cam.ac.uk</span>
+
+    <script>
+      document.getElementById('em1').addEventListener('click', function(){
+        window.location.href = 'mailto:' + 'xuhy0914' + '@' + 'gmail.com';
+      });
+      document.getElementById('em2').addEventListener('click', function(){
+        window.location.href = 'mailto:' + 'hx276' + '@' + 'cam.ac.uk';
+      });
+    </script>
+      <div></div>
+
+      <strong>Address:</strong> Department of Chemistry, University of Cambridge, Lensfield Road, Cambridge, CB2 1EW, UK<br>
+      <!--
       <strong>Phone:</strong> +44 07713 963787
+      -->
     </p>
+    My current CV can be found <a href="docs/CV_Houyang_Xu.pdf">here</a>.
     <div class="links">
       <a href="https://scholar.google.com/citations?user=028tR5cAAAAJ&hl=en">Google Scholar</a>
       <a href="https://www.researchgate.net/profile/Houyang-Xu">ResearchGate</a>
       <a href="https://orcid.org/0000-0001-9251-6968">ORCID</a>
-      <a href="docs/CV_Houyang_Xu.pdf">Current CV (Oct 2025)</a>
     </div>
+
   </div>
 
   <!--
@@ -225,7 +257,7 @@ a:hover {
 
   <div class="section">
     <div class="section-title">Research Interests</div>
-    <hr>
+  <hr>
     <p>Self-assembly, supramolecular chemistry, conformationally adaptable molecules, and the design of self-assembled biomacromolecules and related materials.</p>
   </div>
 
@@ -233,13 +265,34 @@ a:hover {
   <div class="section-title">Publications</div>
   <hr>
   <ol>
+     
     <li><strong>Xu, H.</strong>; Ronson, T. K.; Heard, A. W.; Teeuwen, P. C. P.; Schneider, L.; Pracht, P.; Thoburn, J. D.; Wales, D. J.; Nitschke, J. R.* A pseudo-cubic metal-organic cage with conformationally switchable faces for dynamically adaptive guest encapsulation. <a href="https://doi.org/10.1038/s41557-024-01708-5"><em>Nat. Chem.</em> <strong>2025</strong>, <em>17</em>, 289–296.</a></li>
+
+    <img src="images/ga_cube.png" alt="Graphical abstract"
+     style="display:block; margin:10px auto; max-width:600px;">
+
+     • Highlighted in <em>Science China Chemistry</em> (<a href="https://doi.org/10.1007/s11426-025-2578-3">Induced-fit expansion and contraction of a pseudo-cubic host switch from <em>endo</em> to <em>exo</em> upon binding large guests</a>, <em>Sci. China Chem.</em> <strong>68</strong>, 1627–1629) by Prof. Kai Wu and Prof. Cheng-Yong Su.
+<div></div>
+     • Highlighted in <em>Chinese Chemical Letters</em> (<a href="https://doi.org/10.1016/j.cclet.2025.111007">Conformationally adaptive metal-organic cages for dynamic guest encapsulation</a>, <em>Chin. Chem. Lett.</em> <strong>36</strong>, 111007, 2025) by Dr. Yujuan Zhou and Dr. Kecheng Jie.
+
+<div style="margin-top: 0.8em;"></div>
+
+     <hr class="sub">
 
     <li><strong>Xu, H.</strong>; Zhu, K.* Supramolecular recognition and mechanically interlocked molecules based on imidazoliums and crown ethers. <a href="https://doi.org/10.1360/SSC-2023-0171"><em>Sci. Sin. Chim.</em> <strong>2023</strong>, <em>53</em> (12), 2509–2522.</a></li>
 
+    <hr class="sub">
+
     <li>Lin, M.; Bian, L.; Chen, Q.; <strong>Xu, H.</strong>; Liu, Z.; Zhu, K.* Cyclization of an Achiral Flipping Panel to Homochiral Tubes Exhibiting Circularly Polarized Luminescence. <a href="https://doi.org/10.1002/anie.202303035"><em>Angew. Chem. Int. Ed.</em> <strong>2023</strong>, <em>62</em> (28), e202303035.</a></li>
 
-    <li><strong>Xu, H.</strong>; Lin, M.-D.; Yuan, J.; Zhou, B.; Mu, Y.; Huo, Y.; Zhu, K.* Fluorescence emission enhancement of a T-shaped benzimidazole with a mechanically-interlocked 'suit'. <a href="DOI	https://doi.org/10.1039/D0CC07471C"><em>Chem. Commun.</em> <strong>2021</strong>, <em>57</em> (26), 3239–3242.</a></li>
+    <hr class="sub">
+    
+    <li><strong>Xu, H.</strong>; Lin, M.-D.; Yuan, J.; Zhou, B.; Mu, Y.; Huo, Y.; Zhu, K.* Fluorescence emission enhancement of a T-shaped benzimidazole with a mechanically-interlocked 'suit'. <a href="https://doi.org/10.1039/D0CC07471C"><em>Chem. Commun.</em> <strong>2021</strong>, <em>57</em> (26), 3239–3242.</a></li>
+
+    <img src="images/ga_suitane.png" alt="Graphical abstract"
+     style="display:block; margin:10px auto; max-width:400px;">
+
+    <hr style="margin-top: 1em;" class="sub">
 
     <li>Yang, Q.<sup>†</sup>; <strong>Xu, H.</strong><sup>†</sup>; Wen, H.; Zhao, H.; Liu, X.; Cai, Y.*; Wang, H.*; Dong, R.* Graphene oxide induced enhancement of light-driven micromotor with biocompatible fuels. <a href="https://doi.org/10.1016/j.apmt.2021.100943"><em>Appl. Mater. Today</em> <strong>2021</strong>, <em>22</em>, 100943.</a></li>
   </ol>
