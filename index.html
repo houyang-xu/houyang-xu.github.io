@@ -62,11 +62,28 @@
     }
 
     .bio-section {
-      margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    position: relative;
     }
 
     .bio-section p {
-      margin-bottom: 0.5em;
+     margin-bottom: 0.5em;
+    }
+
+    .bio-section::after {
+     content: "";
+     display: table;
+     clear: both;
+    }
+
+    .headshot {
+    float: right;
+    width: 125px;
+    max-height: 100%;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    border-radius: 4px;
     }
 
     .links {
@@ -220,6 +237,7 @@ a:hover {
   </div>
 
   <div class="bio-section">
+    <img src="images/head_cropped.jpg" alt="Houyang Xu" class="headshot">
     <p>I am a finishing PhD candidate in Chemistry in the <a href="https://www.nitschkegroup-cambridge.com/"> Nitschke group</a> at the University of Cambridge. My PhD research projects focus on the dynamics and adaptability of metal-organic cages.</p>
     <p>
       <!--
